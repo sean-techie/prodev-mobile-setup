@@ -1,7 +1,7 @@
 import React from "react";
 import { StyleSheet, Text, View } from "react-native";
 
-export default function TabHome() {
+export default function HomeScreen() {
   return (
     <View style={styles.container}>
       <Text>Entry Screen - Awesome</Text>
@@ -10,10 +10,14 @@ export default function TabHome() {
         <Text style={styles.largeText}>
           Typescript is great if you practice more
         </Text>
+
         <Text style={styles.mediumText}>
           React Native provides you a single codebase for cross platforms
         </Text>
-        <Text style={styles.smallText}>ALX is awesome</Text>
+
+        <Text style={styles.smallText}>
+          ALX is awesome
+        </Text>
       </View>
     </View>
   );
@@ -22,11 +26,12 @@ export default function TabHome() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: "#90caf9",
+    backgroundColor: "         
     justifyContent: "center",
     alignItems: "center",
     padding: 20,
   },
+
   largeText: {
     fontSize: 30,
     color: "#f44336",
@@ -34,13 +39,15 @@ const styles = StyleSheet.create({
     fontWeight: "700",
     fontVariant: ["small-caps"],
   },
+
   mediumText: {
     fontSize: 20,
-    color: "#9c27b0",
+    color: "         
     marginBottom: 10,
     fontWeight: "500",
     textAlign: "right",
   },
+
   smallText: {
     fontSize: 15,
     color: "#2196f3",
