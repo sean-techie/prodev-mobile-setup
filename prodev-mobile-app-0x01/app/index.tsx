@@ -37,14 +37,4 @@ const styles = StyleSheet.create({
   mediumText: {
     fontSize: 20,
     color: "#9c27b0",
-    marginBottom: 10,
-    fontWeight: "500",
-    textAlign: "right",
-  },
-  smallText: {
-    fontSize: 15,
-    color: "#2196f3",
-    fontWeight: "400",
-    textAlign: "center",
-  },
-});
+    marginBottom:
