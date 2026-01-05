@@ -3,9 +3,9 @@ import { View, Text, StyleSheet } from "react-native";
 export default function HomeScreen() {
   return (
     <View style={styles.container}>
-      <Text style={styles.title}>Welcome to ProDev Mobile App 🚀</Text>
+      <Text style={styles.title}>First App Created</Text>
       <Text style={styles.subtitle}>
-        This is the home screen inside the Tabs layout.
+        Welcome to the ProDev Mobile App using Expo Router.
       </Text>
     </View>
   );
