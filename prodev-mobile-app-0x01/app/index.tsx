@@ -1,15 +1,17 @@
 import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import { Stack } from 'expo-router';
+import { SafeAreaProvider } from 'react-native-safe-area-context';
 
-export default function App() {
+export default function RootLayout() {
   return (
-    <View style={styles.container}>
-      <Text style={styles.largeText}>Entry Screen - Awesome</Text>
-      <Text style={styles.mediumText}>Welcome to your first app!</Text>
-      <Text style={styles.smallText}>Start building your app here.</Text>
-    </View>
+    <SafeAreaProvider>
+      <Stack>
+        <Stack.Screen name="(tabs)" options={{ headerShown: false }} />
+      </Stack>
+    </SafeAreaProvider>
   );
 }
+
 
 const styles = StyleSheet.create({
   container: {
