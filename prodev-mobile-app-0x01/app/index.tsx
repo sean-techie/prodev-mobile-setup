@@ -1,6 +1,7 @@
 import React from "react";
 import { StyleSheet, Text, View } from "react-native";
 
+// This is the default export required by Expo Router
 export default function App() {
   return (
     <View style={styles.container}>
@@ -37,4 +38,14 @@ const styles = StyleSheet.create({
   mediumText: {
     fontSize: 20,
     color: "#9c27b0",
-    marginBottom:
+    marginBottom: 10,
+    fontWeight: "500",
+    textAlign: "right",
+  },
+  smallText: {
+    fontSize: 15,
+    color: "#2196f3",
+    fontWeight: "400",
+    textAlign: "center",
+  },
+});
