@@ -1,4 +1,15 @@
-# Welcome to your Expo app 👋
+## Reset Project Observation
+
+When I ran the command `npm run reset-project`, the project was reset to a clean state.
+
+### What happened:
+- I was prompted to choose whether to move existing files instead of deleting them.
+- After confirming, the existing project files were moved into a newly created `app-example/` directory.
+- The default Expo template files were regenerated in the root project directory.
+- This allowed me to keep a backup of my previous work while starting with a fresh project setup.
+
+### Purpose:
+The reset process helps clean the project environment, remove previous configurations, and restore the default Expo structure without permanently deleting existing files.# Welcome to your Expo app 👋
 
 This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
 
