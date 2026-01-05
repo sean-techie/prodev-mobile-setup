@@ -12,4 +12,4 @@ export default function RootLayout() {
     </SafeAreaProvider>
   );
 }
- Is this code complete
+ 
