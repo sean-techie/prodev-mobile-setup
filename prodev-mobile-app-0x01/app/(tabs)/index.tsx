@@ -1,8 +1,7 @@
 import React from "react";
 import { StyleSheet, Text, View } from "react-native";
 
-// Default export is required
-export default function App() {
+export default function TabHome() {
   return (
     <View style={styles.container}>
       <Text>Entry Screen - Awesome</Text>
