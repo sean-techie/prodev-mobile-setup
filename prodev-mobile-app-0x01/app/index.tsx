@@ -1,51 +1,42 @@
-import React from "react";
-import { StyleSheet, Text, View } from "react-native";
+// app/index.tsx
+import React from 'react';
+import { Stack } from 'expo-router';
+import { SafeAreaProvider } from 'react-native-safe-area-context';
+import { StatusBar } from 'expo-status-bar';
 
-// This is the default export required by Expo Router
-export default function App() {
+/**
+ * Root layout component for the entire app.
+ * Wraps all screens in a Stack Navigator and provides safe area insets.
+ * @returns {JSX.Element} The root navigation stack.
+ */
+export default function RootLayout(): JSX.Element {
   return (
-    <View style={styles.container}>
-      <Text>Entry Screen - Awesome</Text>
+    <SafeAreaProvider>
+      <StatusBar style="auto" />
 
-      <View>
-        <Text style={styles.largeText}>
-          Typescript is great if you practice more
-        </Text>
-        <Text style={styles.mediumText}>
-          React Native provides you a single codebase for cross platforms
-        </Text>
-        <Text style={styles.smallText}>ALX is awesome</Text>
-      </View>
-    </View>
+      <Stack
+        screenOptions={{
+          headerStyle: { backgroundColor: '                                      
+          headerTintColor: '#fff',                      // white back/close buttons
+          headerTitleStyle: { fontWeight: 'bold' },
+        }}
+      >
+        {/* Main tab group — hides header since tabs handle their own nav */}
+        <Stack.Screen 
+          name="(tabs)" 
+          options={{ 
+            headerShown: false, 
+            title: "My App" 
+          }} 
+        />
+
+        {/* Optional: Add future screens here */}
+        <!-- 
+        <Stack.Screen name="login" options={{ title: "Sign In" }} /> 
+        <Stack.Screen name="settings" options={{ title: "Settings" }} /> 
+        -->
+
+      </Stack>
+    </SafeAreaProvider>
   );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: "#90caf9",
-    justifyContent: "center",
-    alignItems: "center",
-    padding: 20,
-  },
-  largeText: {
-    fontSize: 30,
-    color: "#f44336",
-    marginBottom: 5,
-    fontWeight: "700",
-    fontVariant: ["small-caps"],
-  },
-  mediumText: {
-    fontSize: 20,
-    color: "#9c27b0",
-    marginBottom: 10,
-    fontWeight: "500",
-    textAlign: "right",
-  },
-  smallText: {
-    fontSize: 15,
-    color: "#2196f3",
-    fontWeight: "400",
-    textAlign: "center",
-  },
-});
